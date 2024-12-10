@@ -162,6 +162,8 @@ The code is arranged as a package `quarot` in `/src`, and scripts to replicate e
 `/experiments`. To install the `quarot` package, we recommend
 
 ```
+    conda create -n t_comp python=3.11
+    conda activate t_comp
     pip install -e .
     pip install packaging
     pip install flash-attn==2.5.8 --no-build-isolation
