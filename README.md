@@ -159,11 +159,22 @@ custom model loading and initialization functionality.
 ## Installation
 
 The code is arranged as a package `quarot` in `/src`, and scripts to replicate experiments from the paper are in 
-`/experiments`. To install the `quarot` package, we recommend
+`/experiments`. To install the `quarot` package, we recommend:
 
-```
-    conda create -n t_comp python=3.11
-    conda activate t_comp
+1. Set up environment
+   1. Either set up `conda`:
+      ```bash
+      conda create -n t_comp python=3.10
+      conda activate t_comp
+      ```
+   2. or `venv`:
+      ```bash
+      python3 -m venv t_comp
+      source t_comp/bin/activate
+      ```
+
+2. And then install requirements
+```bash
     pip install -e .
     pip install packaging
     pip install flash-attn==2.5.8 --no-build-isolation
