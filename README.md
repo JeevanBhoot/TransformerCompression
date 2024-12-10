@@ -176,7 +176,7 @@ The code is arranged as a package `quarot` in `/src`, and scripts to replicate e
 2. And then install requirements
 ```bash
     pip install -e .
-    pip install packaging
+    pip install wheel
     pip install flash-attn==2.5.8 --no-build-isolation
     pip install -e .[quarot]
 ```

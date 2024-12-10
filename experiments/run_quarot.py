@@ -86,7 +86,7 @@ def quarot_arg_parser(interactive: bool = True) -> argparse.Namespace:
     # Rotation Arguments
     parser.add_argument(
         '--rotate',
-        type=str2bool,
+        action="store_true",
         default=False,
         help='Apply QuaRot/Hadamard rotation to the model.',
     )
